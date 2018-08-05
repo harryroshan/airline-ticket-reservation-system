@@ -20,4 +20,4 @@ This system also incorporates a frequent flier miles points system for loyal cus
 This project was implemented using HTML & CSS for the front-end and PHP for the back-end. The database was created and updated using MySQL.
 
 ## Note:-
-In order to get the website running, all the files (for e.g. css files,images,.etc) have to be placed in one single folder. I just have just organized them into folders for githib.
+In order to get the website running, all the files (for e.g. css files,images,.etc) have to be placed in one single folder. I have just organized them into folders for githib.
