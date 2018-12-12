@@ -42,6 +42,14 @@
 		</div>
 		<form action="cancel_booked_tickets_form_handler.php" method="post">
 			<h2>CANCEL BOOKED TICKETS</h2>
+			<?php
+				if(isset($_GET['msg']) && $_GET['msg']=='failed')
+				{
+					echo "<strong style='color: red'>*Invalid PNR, please enter PNR again</strong>
+						<br>
+						<br>";
+				}
+			?>
 			<table cellpadding="5" style="padding-left: 30px;">
 				<tr>
 					<td class="fix_table">Enter the PNR</td>

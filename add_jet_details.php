@@ -41,6 +41,18 @@
 		<form action="add_jet_details_form_handler.php" method="post">
 			<h2>ENTER THE AIRCRAFTS DETAILS</h2>
 			<div>
+			<?php
+				if(isset($_GET['msg']) && $_GET['msg']=='success')
+				{
+					echo "<strong style='color: green'>The Aircraft has been successfully added.</strong>
+						<br><br>";
+				}
+				else if(isset($_GET['msg']) && $_GET['msg']=='failed')
+				{
+					echo "<strong style='color:red'>*Jet ID already exists, please enter a new Jet ID.</strong>
+						<br><br>";
+				}
+			?>
 			<table cellpadding="5">
 				<tr>
 					<td class="fix_table">Enter a valid Jet ID</td>
@@ -72,8 +84,5 @@
 			<input type="submit" value="Submit" name="Submit">
 			</div>
 		</form>
-		<!--check out addling local host in links and other places
-
-		-->
 	</body>
 </html>

@@ -53,6 +53,14 @@
 				<strong>User Type:</strong><br>
 				Customer <input type='radio' name='user_type' value='Customer' checked/> Administrator <input type='radio' name='user_type' value='Administrator'/>
 				<br>
+				<?php
+					if(isset($_GET['msg']) && $_GET['msg']=='failed')
+					{
+						echo "<br>
+						<strong style='color:red'>Invalid Username/Password</strong>
+						<br><br>";
+					}
+				?>
 				<input type="submit" name="Login" value="Login">
 			</fieldset>
 			<br>

@@ -57,13 +57,13 @@
 					if($affected_rows==1)
 					{
 						echo "Successfully Submitted";
-						header("location: add_jet_details_success.php");
+						header("location: add_jet_details.php?msg=success");
 					}
 					else
 					{
 						echo "Submit Error";
 						echo mysqli_error();
-						header("location: add_jet_details_error.php");
+						header("location: add_jet_details.php?msg=failed");
 					}
 				}
 				else

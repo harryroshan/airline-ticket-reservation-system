@@ -40,6 +40,20 @@
 		</div>
 		<form action="add_flight_details_form_handler.php" method="post">
 			<h2>ENTER THE FLIGHT SCHEDULE DETAILS</h2>
+			<?php
+				if(isset($_GET['msg']) && $_GET['msg']=='success')
+				{
+					echo "<strong style='color: green'>The Flight Schedule has been successfully added.</strong>
+						<br>
+						<br>";
+				}
+				else if(isset($_GET['msg']) && $_GET['msg']=='failed')
+				{
+					echo "<strong style='color: red'>*Invalid Flight Schedule Details, please enter again.</strong>
+						<br>
+						<br>";
+				}
+			?>
 			<table cellpadding="5">
 				<tr>
 					<td class="fix_table">Flight Number</td>

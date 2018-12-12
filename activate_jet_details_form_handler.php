@@ -39,13 +39,13 @@
 					if($affected_rows==1)
 					{
 						echo "Successfully Activated";
-						header("location: activate_jet_details_success.php");
+						header("location: activate_jet_details.php?msg=success");
 					}
 					else
 					{
 						echo "Submit Error";
 						echo mysqli_error();
-						header("location: activate_jet_details_error.php");
+						header("location: activate_jet_details.php?msg=failed");
 					}
 				}
 				else

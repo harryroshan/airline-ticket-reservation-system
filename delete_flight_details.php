@@ -46,6 +46,20 @@
 		<form action="delete_flight_details_form_handler.php" method="post">
 			<h2>ENTER THE FLIGHT SCHEDULE TO BE DELETED</h2>
 			<div>
+			<?php
+				if(isset($_GET['msg']) && $_GET['msg']=='success')
+				{
+					echo "<strong style='color:green; padding-left:20px;'>The Flight Schedule has been successfully deleted.</strong>
+						<br>
+						<br>";
+				}
+				else if(isset($_GET['msg']) && $_GET['msg']=='failed')
+				{
+					echo "<strong style='color:red; padding-left:20px;'>*Invalid Flight No./Departure Date, please enter again.</strong>
+						<br>
+						<br>";
+				}
+			?>
 			<table cellpadding="5" style="padding-left: 20px;">
 				<tr>
 					<td class="fix_table">Enter a valid Flight No.</td>

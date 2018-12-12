@@ -39,13 +39,13 @@
 					if($affected_rows==1)
 					{
 						echo "Successfully Deactvated";
-						header("location: deactivate_jet_details_success.php");
+						header("location: deactivate_jet_details.php?msg=success");
 					}
 					else
 					{
 						echo "Submit Error";
 						echo mysqli_error();
-						header("location: deactivate_jet_details_error.php");
+						header("location: deactivate_jet_details.php?msg=failed");
 					}
 				}
 				else

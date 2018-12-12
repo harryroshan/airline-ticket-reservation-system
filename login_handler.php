@@ -66,7 +66,7 @@
 						{
 							echo "Login Error";
 							session_destroy();
-							header('location:login_user_error.php');
+							header('location:login_page.php?msg=failed');
 						}
 					}
 					else if($user_type=='Administrator')
@@ -96,7 +96,7 @@
 						{
 							echo "Login Error";
 							session_destroy();
-							header('location:login_user_error.php');
+							header('location:login_page.php?msg=failed');
 						}
 					}
 				}

@@ -47,13 +47,13 @@
 					if($affected_rows==1)
 					{
 						echo "Successfully Deleted";
-						header("location: delete_flight_details_success.php");
+						header("location: delete_flight_details.php?msg=success");
 					}
 					else
 					{
 						echo "Submit Error";
 						echo mysqli_error();
-						header("location: delete_flight_details_error.php");
+						header("location: delete_flight_details.php?msg=failed");
 					}
 				}
 				else

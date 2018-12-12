@@ -38,7 +38,7 @@
 					if($cnt!=1)
 					{
 						mysqli_close($dbc);
-						header("location: cancel_booked_tickets_error.php");
+						header("location: cancel_booked_tickets.php?msg=failed");
 					}
 					$query="UPDATE Ticket_Details SET booking_status='CANCELED' WHERE pnr=? and customer_id=?";
 					$stmt=mysqli_prepare($dbc,$query);
@@ -95,7 +95,7 @@
 					{
 						echo "Submit Error";
 						echo mysqli_error();
-						header("location: cancel_booked_tickets_error.php");
+						header("location: cancel_booked_tickets.php?msg=failed");
 					}
 					mysqli_close($dbc);
 				}
