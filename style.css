@@ -4,9 +4,13 @@ h1{
 	font-size: 50pt;
 	color: orange;
 }
+#title{
+	display: inline;
+}
 .logo{
 	float: left;
-    /*width: 10px;*/
+	object-fit: cover;
+    width: 55px;
     padding: 10px;
 }
 .float_form{
@@ -78,7 +82,7 @@ h2{
 	font-size: 30pt;
 	color: orange;
 	position: absolute;
-    top: 30%;
+    top: 25%;
 }
 .admin_func:hover{
 	color: #030337;

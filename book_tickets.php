@@ -34,11 +34,8 @@
 		<link rel="stylesheet" href="http:\\localhost\font-awesome-4.7.0\css\font-awesome.min.css">
 	</head>
 	<body>
-		<div class="logo">
-			<img src="shutterstock_22.jpg" width=75px/> 
-		</div>
-		<h1>
-			&nbsp;
+		<img class="logo" src="shutterstock_22.jpg"/> 
+		<h1 id="title">
 			AADITH AIRLINES
 		</h1>
 		<div>
