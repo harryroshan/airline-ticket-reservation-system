@@ -25,11 +25,11 @@
     			padding: 5.5px 30px;
 			}
 		</style>
-		<link rel="stylesheet" type="text/css" href="style.css"/>
-		<link rel="stylesheet" href="http:\\localhost\font-awesome-4.7.0\css\font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<link rel="stylesheet" href="font-awesome-4.7.0\css\font-awesome.min.css">
 	</head>
 	<body>
-		<img class="logo" src="shutterstock_22.jpg"/> 
+		<img class="logo" src="images/shutterstock_22.jpg"/> 
 		<h1 id="title">
 			AADITH AIRLINES
 		</h1>
